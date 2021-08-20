@@ -1,6 +1,6 @@
 {
-  "short_name": "Finance Checker",
-  "name": "Off/On Budget Tracker",
+  "short_name": "Budget Tracker",
+  "name": "Flip Effect Budget Tracker",
   "icons": [
     {
       "src": "./icons/icon-192x192.png",
