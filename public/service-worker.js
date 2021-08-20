@@ -8,7 +8,7 @@ const LOCK_ON_CACHE = [
 ];
 
 const START_CACHE_NAME = "budget-cache-v1";
-const SETUP_CACHE_NAME = "data-cache-v1";
+const SETUP_CACHE_NAME = "update-cache-v1";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(START_CACHE_NAME).then((cache) => {
