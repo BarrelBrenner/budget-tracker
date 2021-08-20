@@ -10,7 +10,7 @@ const LOCK_ON_CACHE = [
   "/style.css",
 ];
 
-const START_CACHE_NAME = "budget-cache-v1";
+const START_CACHE_NAME = "static-cache-v13";
 const SETUP_CACHE_NAME = "data-cache-v8";
 
 self.addEventListener("install", (event) => {
