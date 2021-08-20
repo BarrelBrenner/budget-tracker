@@ -1,6 +1,5 @@
 const LOCK_ON_CACHE = [
   "/",
-  "/api/transaction",
   "/db.js",
   "/index.html",
   "/index.js",
