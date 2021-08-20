@@ -1,4 +1,4 @@
-const LOCK_ON_CACHE = [
+const FILES_TO_CACHE = [
   "/",
   "/api/transaction",
   "/db.js",
@@ -13,7 +13,7 @@ const SETUP_CACHE_NAME = "tracks-cache-v1";
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(START_CACHE_NAME).then((cache) => {
     console.log("Pre-cached check success!");
-    return cache.addAll(LOCK_ON_CACHE);
+    return cache.addAll(FILES_TO_CACHE);
     })
   );
   self.skipWaiting();
