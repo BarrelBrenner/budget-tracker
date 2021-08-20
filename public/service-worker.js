@@ -1,5 +1,6 @@
 const LOCK_ON_CACHE = [
   "/",
+  "/api/transaction",
   "/db.js",
   "/index.html",
   "/index.js",
@@ -21,7 +22,8 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(caches.keys().then((keyList) => {
       return Promise.all(keyList.map((key) => {
-          if (key !== START_CACHE_NAME && key !== SETUP_CACHE_NAME) {
+        if (key !== START_CACHE_NAME && key !== SETUP_CACHE_NAME) {
+            console.log("Progressing removal of obsolete cache data", key);
             return caches.delete(key);
           }
         })
