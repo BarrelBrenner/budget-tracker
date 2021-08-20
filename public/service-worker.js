@@ -12,6 +12,7 @@ const SETUP_CACHE_NAME = "data-cache-v8";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(START_CACHE_NAME).then((cache) => {
+    console.log("Pre-cached check success!");
     return cache.addAll(LOCK_ON_CACHE);
     })
   );
