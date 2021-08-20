@@ -33,6 +33,7 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (event.request.url.includes("/api/")) {
+    console.log("[Service Worker] is retrieving the following (data)", event.request.url);
     event.respondWith(caches.open(SETUP_CACHE_NAME).then((cache) => {
         return fetch(event.request)
           .then((response) => {
