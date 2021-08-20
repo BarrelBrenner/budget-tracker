@@ -3,7 +3,6 @@ const LOCK_ON_CACHE = [
   "/db.js",
   "/index.html",
   "/index.js",
-  "/manifest.webmanifest",
   "/style.css",
 ];
 
