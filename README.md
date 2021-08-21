@@ -21,7 +21,7 @@ You would need to connect them together buy starting with the following --
 2. Click on Settings
 3. Scroll down to Config Vars
 4. Inside KEY box type in MongoDB_URI
-5. Inside VALUE box type in mongodb+srv://<username>:<password>@<clusterName>.puqzm.mongodb.net/<databaseName>?retryWrites=true&w=majority
+5. Inside VALUE box type in mongodb+srv://"username":"password"@"clusterName".puqzm.mongodb.net/"databaseName"?retryWrites=true&w=majority
 
 names are as follows --
 
